@@ -1,0 +1,29 @@
+<div ng-if='!error' ng-cloak>
+    <div>
+    <h2>{{user.name}}</h2>
+    <img ng-src="{{user.avatar_url}}" height="128" width="128" title ="{{user.name}}">
+    </div>
+<a href="#/">Back to Search</a>
+    <table class="table table-bordered table-condensed">
+
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat = "repo in repos">
+                <td><img ng-src="{{repo.owner.avatar_url}}" height=64 width=64 alt="repo.name"></td>
+                <td><a ng-click="callCommit(repo)">{{repo.owner.login}}</a></td>
+                <td>{{repo.score}}</td>
+                <td>{{repo.language}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div ng-if='error'>
+    <h1 class="text-center" style="color:red;" > {{error}} </h1>
+</div>

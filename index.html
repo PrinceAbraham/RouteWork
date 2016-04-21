@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type ="text/css" href = "css/bootstrap.css">
+    <link rel="stylesheet" type ="text/css" href = "css/bootstrap.min.css">
+    <link  rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+</head>
+<body ng-app="routeApp">
+    
+        <!--header-->
+        <h1 class ="text-center">Welcome to the Github Repo Search Directory</h1>
+        
+        <div ui-view></div>
+    
+    <!--<div ng-include="'../partials/LaunchModalDemo.html'"></div>-->
+    <script src="js/angular.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="services/github.js"></script>
+    <script src="controllers/search.controller.js"></script>
+    <script src="controllers/repo.controller.js"></script>
+    <script src="controllers/commitController.js"></script>
+    <script src ="js/jquery.js"></script>
+    <script src = "js/bootstrap.js"></script>
+
+</body>
+</html>
