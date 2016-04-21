@@ -17,7 +17,7 @@
         <tbody>
             <tr ng-repeat = "repo in repos">
                 <td><img ng-src="{{repo.owner.avatar_url}}" height=64 width=64 alt="repo.name"></td>
-                <td><a ng-click="callCommit(repo)">{{repo.owner.login}}</a></td>
+                <td><a title="Click to see commits" ng-click="callCommit(repo)">{{repo.owner.login}}</a></td>
                 <td>{{repo.score}}</td>
                 <td>{{repo.language}}</td>
             </tr>

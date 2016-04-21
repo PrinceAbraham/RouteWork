@@ -1,9 +1,9 @@
 <div ng-if='!error' ng-cloak>
     <div>
-    <h2>{{user.name}}</h2>
+    <h2>{{user.login}}</h2>
     <img ng-src="{{user.avatar_url}}" height="128" width="128" title ="{{user.name}}">
     </div>
-<a href="#/">Back to Search</a> <a href="#/repo/{{user.name}}">Back To {{user.name}}</a>
+<a href="#/">Back to Search</a> <a href="#/repo/{{user.login}}">Back To {{user.login}}</a>
     <table class="table table-bordered table-condensed">
 
         <thead>
